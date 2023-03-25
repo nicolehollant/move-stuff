@@ -1,0 +1,48 @@
+{
+  "name": "move-stuff",
+  "version": "0.1.1",
+  "description": "move your config files while your processes arent running",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "config",
+    "root",
+    "organization",
+    "move",
+    "stuff"
+  ],
+  "author": "nicole hollant <nicolehollant@gmail.com>",
+  "homepage": "https://github.com/nicolehollant/move-stuff#readme",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "node": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolehollant/dynamodb-ts.git"
+  },
+  "gitHead": "6ae0ebb28b2a9a93b2faa434ee500698aa57868d"
+}
