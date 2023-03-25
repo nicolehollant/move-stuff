@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "release": "lerna publish --no-private"
+  },
+  "devDependencies": {
+    "lerna": "^6.5.1"
+  }
+}
