@@ -4,8 +4,12 @@
   "description": "move your config files while your processes arent running",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "bin": {
+    "move-stuff": "./dist/index.cjs",
+    "move-shit": "./dist/index.cjs"
+  },
   "scripts": {
     "build": "tsup src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,6 +35,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.15.9",
+    "@types/yargs": "^17.0.23",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5"
   },
@@ -42,7 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolehollant/dynamodb-ts.git"
+    "url": "git+https://github.com/nicolehollant/move-stuff.git"
   },
-  "gitHead": "5927670b236e72933dc94bce1ca1c6bb89273c6f"
+  "gitHead": "5927670b236e72933dc94bce1ca1c6bb89273c6f",
+  "dependencies": {
+    "yargs": "^17.7.1"
+  }
 }
