@@ -46,7 +46,7 @@ async function getConfigLocation(argv: ArgumentsCamelCase<any>) {
   }
   return (
     JSON.parse((await fs.promises.readFile(path.join(process.cwd(), 'package.json'))).toString())?.['move-stuff']
-      ?.location ?? 'config-files'
+      ?.location ?? 'config'
   )
 }
 

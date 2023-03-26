@@ -8,7 +8,8 @@
   "module": "./dist/index.js",
   "bin": {
     "move-stuff": "./dist/index.cjs",
-    "move-shit": "./dist/index.cjs"
+    "move-shit": "./dist/index.cjs",
+    "mvcf": "./dist/index.cjs"
   },
   "scripts": {
     "build": "tsup src/index.ts",
